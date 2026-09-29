@@ -1,0 +1,451 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;\f1\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red0\green0\blue233;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c0\c0\c93333;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Initializing global variables...\
+Starting training process...\
+Step 1: Loading data...\
+Loaded train data: (574945, 341)\
+Step 2: Handling missing data...\
+Processed data shape: (574945, 351)\
+Step 3: Extracting features...\
+Aggregated sequences: (8151, 105)\
+Added demographics: (8151, 112)\
+Step 4: Engineering features...\
+Engineered features: (8151, 130)\
+Step 5: Preprocessing...\
+Final training shape: (8151, 120)\
+Number of classes: 18\
+Class distribution: [638 637 161 638 640 161 640 640 161 640 640 161 477 161 640 478 477 161]\
+Step 6: Training main model...\
+Epoch 1/50\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs24 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26 \cf0 2025-08-11 09:30:00.244747: E tensorflow/core/framework/node_def_util.cc:676] NodeDef mentions attribute use_unbounded_threadpool which is not in the op definition: Op<name=MapDataset; signature=input_dataset:variant, other_arguments: -> handle:variant; attr=f:func; attr=Targuments:list(type),min=0; attr=output_types:list(type),min=1; attr=output_shapes:list(shape),min=1; attr=use_inter_op_parallelism:bool,default=true; attr=preserve_cardinality:bool,default=false; attr=force_synchronous:bool,default=false; attr=meta{\field{\*\fldinst{HYPERLINK "data:string,default="}}{\fldrslt \cf3 \ul \ulc3 \strokec3 data:string,default=}}""> This may be expected if your graph generating binary is newer  than this binary. Unknown attributes will be ignored. NodeDef: \{\{node ParallelMapDatasetV2/_16\}\}\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs24 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26 \cf0 177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  9s 10ms/step - accuracy: 0.2284 - loss: 2.2979 - learning_rate: 0.0020\
+Epoch 2/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.4651 - loss: 1.2506 - learning_rate: 0.0020\
+Epoch 3/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.5293 - loss: 1.0611 - learning_rate: 0.0020\
+Epoch 4/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.5771 - loss: 0.9436 - learning_rate: 0.0019\
+Epoch 5/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.6052 - loss: 0.8768 - learning_rate: 0.0018\
+Epoch 6/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.6289 - loss: 0.8183 - learning_rate: 0.0017\
+Epoch 7/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.6485 - loss: 0.7676 - learning_rate: 0.0016\
+Epoch 8/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.6790 - loss: 0.7034 - learning_rate: 0.0015\
+Epoch 9/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.6938 - loss: 0.6638 - learning_rate: 0.0013\
+Epoch 10/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.7135 - loss: 0.6193 - learning_rate: 0.0012\
+Epoch 11/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.7232 - loss: 0.5970 - learning_rate: 0.0010\
+Epoch 12/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.7344 - loss: 0.5631 - learning_rate: 8.4357e-04\
+Epoch 13/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 11ms/step - accuracy: 0.7528 - loss: 0.5241 - learning_rate: 6.9098e-04\
+Epoch 14/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 13ms/step - accuracy: 0.7608 - loss: 0.5078 - learning_rate: 5.4601e-04\
+Epoch 15/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 11ms/step - accuracy: 0.7721 - loss: 0.4875 - learning_rate: 4.1221e-04\
+Epoch 16/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.7785 - loss: 0.4761 - learning_rate: 2.9289e-04\
+Epoch 17/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 9ms/step - accuracy: 0.7833 - loss: 0.4499 - learning_rate: 1.9098e-04\
+Epoch 18/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.7865 - loss: 0.4482 - learning_rate: 1.0899e-04\
+Epoch 19/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.7873 - loss: 0.4447 - learning_rate: 4.8943e-05\
+Epoch 20/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.7974 - loss: 0.4296 - learning_rate: 1.2312e-05\
+Epoch 21/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 9ms/step - accuracy: 0.7596 - loss: 0.5164 - learning_rate: 0.0018\
+Epoch 22/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.7439 - loss: 0.5518 - learning_rate: 0.0018\
+Epoch 23/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.7548 - loss: 0.5276 - learning_rate: 0.0018\
+Epoch 24/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.7699 - loss: 0.5007 - learning_rate: 0.0017\
+Epoch 25/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 11ms/step - accuracy: 0.7786 - loss: 0.4740 - learning_rate: 0.0016\
+Epoch 26/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.7876 - loss: 0.4522 - learning_rate: 0.0015\
+Epoch 27/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.7993 - loss: 0.4271 - learning_rate: 0.0014\
+Epoch 28/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.8112 - loss: 0.3948 - learning_rate: 0.0013\
+Epoch 29/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.8174 - loss: 0.3748 - learning_rate: 0.0012\
+Epoch 30/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 11ms/step - accuracy: 0.8316 - loss: 0.3532 - learning_rate: 0.0010\
+Epoch 31/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 11ms/step - accuracy: 0.8355 - loss: 0.3442 - learning_rate: 9.0000e-04\
+Epoch 32/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 11ms/step - accuracy: 0.8466 - loss: 0.3185 - learning_rate: 7.5921e-04\
+Epoch 33/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 11ms/step - accuracy: 0.8584 - loss: 0.3025 - learning_rate: 6.2188e-04\
+Epoch 34/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.8613 - loss: 0.2933 - learning_rate: 4.9141e-04\
+Epoch 35/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.8610 - loss: 0.2830 - learning_rate: 3.7099e-04\
+Epoch 36/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.8688 - loss: 0.2692 - learning_rate: 2.6360e-04\
+Epoch 37/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.8751 - loss: 0.2623 - learning_rate: 1.7188e-04\
+Epoch 38/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.8750 - loss: 0.2578 - learning_rate: 9.8094e-05\
+Epoch 39/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.8824 - loss: 0.2478 - learning_rate: 4.4049e-05\
+Epoch 40/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.8755 - loss: 0.2539 - learning_rate: 1.1080e-05\
+Epoch 41/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.8494 - loss: 0.3192 - learning_rate: 0.0016\
+Epoch 42/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.8352 - loss: 0.3570 - learning_rate: 0.0016\
+Epoch 43/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.8375 - loss: 0.3516 - learning_rate: 0.0016\
+Epoch 44/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.8398 - loss: 0.3447 - learning_rate: 0.0015\
+Epoch 45/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.8468 - loss: 0.3224 - learning_rate: 0.0015\
+Epoch 46/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.8548 - loss: 0.3127 - learning_rate: 0.0014\
+Epoch 47/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.8639 - loss: 0.2912 - learning_rate: 0.0013\
+Epoch 48/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.8637 - loss: 0.2904 - learning_rate: 0.0012\
+Epoch 49/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.8735 - loss: 0.2750 - learning_rate: 0.0011\
+Epoch 50/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  2s 10ms/step - accuracy: 0.8742 - loss: 0.2686 - learning_rate: 9.3671e-04\
+Step 7: Creating IMU-only feature set...\
+Using 49 IMU-only features out of 120 total\
+Step 8: Training IMU-only model...\
+Epoch 1/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  8s 7ms/step - accuracy: 0.1194 - loss: 2.7218 - learning_rate: 0.0020\
+Epoch 2/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.2700 - loss: 1.8966 - learning_rate: 0.0020\
+Epoch 3/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.3155 - loss: 1.6665 - learning_rate: 0.0020\
+Epoch 4/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.3489 - loss: 1.5415 - learning_rate: 0.0019\
+Epoch 5/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.3730 - loss: 1.4659 - learning_rate: 0.0018\
+Epoch 6/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.3843 - loss: 1.4252 - learning_rate: 0.0017\
+Epoch 7/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.4006 - loss: 1.3815 - learning_rate: 0.0016\
+Epoch 8/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.4042 - loss: 1.3370 - learning_rate: 0.0015\
+Epoch 9/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.4217 - loss: 1.2961 - learning_rate: 0.0013\
+Epoch 10/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.4378 - loss: 1.2709 - learning_rate: 0.0012\
+Epoch 11/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.4418 - loss: 1.2550 - learning_rate: 0.0010\
+Epoch 12/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.4540 - loss: 1.2207 - learning_rate: 8.4357e-04\
+Epoch 13/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.4516 - loss: 1.2217 - learning_rate: 6.9098e-04\
+Epoch 14/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.4577 - loss: 1.1882 - learning_rate: 5.4601e-04\
+Epoch 15/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.4644 - loss: 1.1875 - learning_rate: 4.1221e-04\
+Epoch 16/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.4643 - loss: 1.1804 - learning_rate: 2.9289e-04\
+Epoch 17/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.4675 - loss: 1.1757 - learning_rate: 1.9098e-04\
+Epoch 18/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.4683 - loss: 1.1736 - learning_rate: 1.0899e-04\
+Epoch 19/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.4674 - loss: 1.1699 - learning_rate: 4.8943e-05\
+Epoch 20/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.4771 - loss: 1.1653 - learning_rate: 1.2312e-05\
+Epoch 21/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.4572 - loss: 1.2000 - learning_rate: 0.0018\
+Epoch 22/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.4623 - loss: 1.1941 - learning_rate: 0.0018\
+Epoch 23/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.4643 - loss: 1.1797 - learning_rate: 0.0018\
+Epoch 24/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.4719 - loss: 1.1596 - learning_rate: 0.0017\
+Epoch 25/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.4824 - loss: 1.1463 - learning_rate: 0.0016\
+Epoch 26/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.4876 - loss: 1.1385 - learning_rate: 0.0015\
+Epoch 27/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.4934 - loss: 1.1247 - learning_rate: 0.0014\
+Epoch 28/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.4968 - loss: 1.0994 - learning_rate: 0.0013\
+Epoch 29/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.4982 - loss: 1.0948 - learning_rate: 0.0012\
+Epoch 30/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.5054 - loss: 1.0795 - learning_rate: 0.0010\
+Epoch 31/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.5055 - loss: 1.0683 - learning_rate: 9.0000e-04\
+Epoch 32/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.5185 - loss: 1.0463 - learning_rate: 7.5921e-04\
+Epoch 33/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.5143 - loss: 1.0506 - learning_rate: 6.2188e-04\
+Epoch 34/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.5239 - loss: 1.0282 - learning_rate: 4.9141e-04\
+Epoch 35/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.5251 - loss: 1.0143 - learning_rate: 3.7099e-04\
+Epoch 36/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.5303 - loss: 1.0135 - learning_rate: 2.6360e-04\
+Epoch 37/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.5248 - loss: 1.0193 - learning_rate: 1.7188e-04\
+Epoch 38/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 8ms/step - accuracy: 0.5228 - loss: 1.0069 - learning_rate: 9.8094e-05\
+Epoch 39/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.5307 - loss: 1.0201 - learning_rate: 4.4049e-05\
+Epoch 40/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.5281 - loss: 1.0044 - learning_rate: 1.1080e-05\
+Epoch 41/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.5192 - loss: 1.0495 - learning_rate: 0.0016\
+Epoch 42/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.5168 - loss: 1.0591 - learning_rate: 0.0016\
+Epoch 43/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.5138 - loss: 1.0443 - learning_rate: 0.0016\
+Epoch 44/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 8ms/step - accuracy: 0.5188 - loss: 1.0468 - learning_rate: 0.0015\
+Epoch 45/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 8ms/step - accuracy: 0.5221 - loss: 1.0401 - learning_rate: 0.0015\
+Epoch 46/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 8ms/step - accuracy: 0.5268 - loss: 1.0158 - learning_rate: 0.0014\
+Epoch 47/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.5282 - loss: 1.0155 - learning_rate: 0.0013\
+Epoch 48/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.5305 - loss: 1.0058 - learning_rate: 0.0012\
+Epoch 49/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.5368 - loss: 1.0010 - learning_rate: 0.0011\
+Epoch 50/50\
+177/177 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473  1s 7ms/step - accuracy: 0.5386 - loss: 0.9803 - learning_rate: 9.3671e-04\
+Training completed successfully!\
+\
+Creating validation split...\
+Training split shape: (6524, 120)\
+Validation split shape: (1627, 120)\
+\
+============================================================\
+CHECKING IF EVALUATION CAN RUN...\
+============================================================\
+nn_model exists: True\
+nn_model_imu_only exists: True\
+X_train_full exists: True\
+y_train_full exists: True\
+preprocessor exists: True\
+Using 49 IMU-only features out of 120 total\
+IMU validation shape: (1627, 49)\
+\
+============================================================\
+EVALUATING MAIN MODEL...\
+============================================================\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs24 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26 \cf0 2025-08-11 09:32:48.317846: E tensorflow/core/framework/node_def_util.cc:676] NodeDef mentions attribute use_unbounded_threadpool which is not in the op definition: Op<name=MapDataset; signature=input_dataset:variant, other_arguments: -> handle:variant; attr=f:func; attr=Targuments:list(type),min=0; attr=output_types:list(type),min=1; attr=output_shapes:list(shape),min=1; attr=use_inter_op_parallelism:bool,default=true; attr=preserve_cardinality:bool,default=false; attr=force_synchronous:bool,default=false; attr=meta{\field{\*\fldinst{HYPERLINK "data:string,default="}}{\fldrslt \cf3 \ul \ulc3 \strokec3 data:string,default=}}""> This may be expected if your graph generating binary is newer  than this binary. Unknown attributes will be ignored. NodeDef: \{\{node ParallelMapDatasetV2/_14\}\}\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs24 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26 \cf0 ============================================================\
+MODEL EVALUATION METRICS\
+============================================================\
+\
+Overall Accuracy: 0.9576\
+F1 Score (Macro): 0.9661\
+F1 Score (Weighted): 0.9575\
+Binary F1 (BFRB vs Non-BFRB): 0.9991\
+\
+>>> COMPETITION SCORE (Avg of Binary & Macro F1): 0.9826 <<<\
+\
+============================================================\
+PER-CLASS METRICS\
+============================================================\
+                                precision    recall  f1-score   support\
+\
+         Above ear - pull hair       1.00      0.99      1.00       128\
+            Cheek - pinch skin       0.98      0.96      0.97       128\
+         Drink from bottle/cup       1.00      1.00      1.00        32\
+           Eyebrow - pull hair       0.96      0.89      0.92       128\
+           Eyelash - pull hair       0.88      0.98      0.93       128\
+Feel around in tray and pull o       1.00      1.00      1.00        32\
+      Forehead - pull hairline       0.98      0.96      0.97       128\
+            Forehead - scratch       0.98      0.99      0.98       128\
+                Glasses on/off       1.00      1.00      1.00        32\
+             Neck - pinch skin       0.85      0.95      0.90       128\
+                Neck - scratch       0.94      0.82      0.88       128\
+           Pinch knee/leg skin       1.00      0.94      0.97        32\
+     Pull air toward your face       0.96      0.97      0.96        94\
+         Scratch knee/leg skin       0.94      1.00      0.97        32\
+                 Text on phone       1.00      1.00      1.00       128\
+                    Wave hello       0.97      0.99      0.98        95\
+             Write name in air       0.99      0.96      0.97        94\
+             Write name on leg       1.00      1.00      1.00        32\
+\
+                      accuracy                           0.96      1627\
+                     macro avg       0.97      0.97      0.97      1627\
+                  weighted avg       0.96      0.96      0.96      1627\
+\
+\
+============================================================\
+PREDICTION CONFIDENCE STATISTICS\
+============================================================\
+Mean confidence: 0.907\
+Min confidence: 0.371\
+Max confidence: 1.000\
+Std confidence: 0.130\
+\
+============================================================\
+ERROR RATE BY CLASS\
+============================================================\
+Class  0 (Above ear - pull hair): 0.008\
+Class  1 (Cheek - pinch skin): 0.039\
+Class  2 (Drink from bottle/cup): 0.000\
+Class  3 (Eyebrow - pull hair): 0.109\
+Class  4 (Eyelash - pull hair): 0.023\
+Class  5 (Feel around in tray and pull o): 0.000\
+Class  6 (Forehead - pull hairline): 0.039\
+Class  7 (Forehead - scratch): 0.008\
+Class  8 (Glasses on/off): 0.000\
+Class  9 (Neck - pinch skin): 0.055\
+Class 10 (Neck - scratch): 0.180\
+Class 11 (Pinch knee/leg skin): 0.062\
+Class 12 (Pull air toward your face): 0.032\
+Class 13 (Scratch knee/leg skin): 0.000\
+Class 14 (Text on phone): 0.000\
+Class 15 (Wave hello): 0.011\
+Class 16 (Write name in air): 0.043\
+Class 17 (Write name on leg): 0.000\
+\
+============================================================\
+TOP 5 MOST CONFUSED PAIRS\
+============================================================\
+ 21 times: Neck - scratch -> Neck - pinch skin\
+ 12 times: Eyebrow - pull hair -> Eyelash - pull hair\
+  7 times: Neck - pinch skin -> Neck - scratch\
+  5 times: Cheek - pinch skin -> Eyelash - pull hair\
+  3 times: Write name in air -> Pull air toward your face\
+\
+============================================================\
+BFRB vs NON-BFRB BREAKDOWN\
+============================================================\
+True Non-BFRB predicted as Non-BFRB: 569\
+True Non-BFRB predicted as BFRB: 2\
+True BFRB predicted as Non-BFRB: 0\
+True BFRB predicted as BFRB: 1056\
+\
+============================================================\
+EVALUATING IMU-ONLY MODEL...\
+============================================================\
+============================================================\
+MODEL EVALUATION METRICS\
+============================================================\
+\
+Overall Accuracy: 0.6054\
+F1 Score (Macro): 0.6797\
+F1 Score (Weighted): 0.5960\
+Binary F1 (BFRB vs Non-BFRB): 0.9881\
+\
+>>> COMPETITION SCORE (Avg of Binary & Macro F1): 0.8339 <<<\
+\
+============================================================\
+PER-CLASS METRICS\
+============================================================\
+                                precision    recall  f1-score   support\
+\
+         Above ear - pull hair       0.47      0.66      0.55       128\
+            Cheek - pinch skin       0.36      0.33      0.34       128\
+         Drink from bottle/cup       0.94      1.00      0.97        32\
+           Eyebrow - pull hair       0.32      0.21      0.25       128\
+           Eyelash - pull hair       0.44      0.41      0.43       128\
+Feel around in tray and pull o       1.00      1.00      1.00        32\
+      Forehead - pull hairline       0.42      0.68      0.52       128\
+            Forehead - scratch       0.59      0.66      0.62       128\
+                Glasses on/off       0.89      1.00      0.94        32\
+             Neck - pinch skin       0.43      0.31      0.36       128\
+                Neck - scratch       0.57      0.33      0.42       128\
+           Pinch knee/leg skin       0.79      0.94      0.86        32\
+     Pull air toward your face       0.74      0.69      0.71        94\
+         Scratch knee/leg skin       0.92      0.69      0.79        32\
+                 Text on phone       0.99      0.97      0.98       128\
+                    Wave hello       0.89      0.87      0.88        95\
+             Write name in air       0.76      0.81      0.78        94\
+             Write name on leg       0.78      0.88      0.82        32\
+\
+                      accuracy                           0.61      1627\
+                     macro avg       0.68      0.69      0.68      1627\
+                  weighted avg       0.60      0.61      0.60      1627\
+\
+\
+============================================================\
+PREDICTION CONFIDENCE STATISTICS\
+============================================================\
+Mean confidence: 0.547\
+Min confidence: 0.149\
+Max confidence: 1.000\
+Std confidence: 0.269\
+\
+============================================================\
+ERROR RATE BY CLASS\
+============================================================\
+Class  0 (Above ear - pull hair): 0.336\
+Class  1 (Cheek - pinch skin): 0.672\
+Class  2 (Drink from bottle/cup): 0.000\
+Class  3 (Eyebrow - pull hair): 0.789\
+Class  4 (Eyelash - pull hair): 0.586\
+Class  5 (Feel around in tray and pull o): 0.000\
+Class  6 (Forehead - pull hairline): 0.320\
+Class  7 (Forehead - scratch): 0.336\
+Class  8 (Glasses on/off): 0.000\
+Class  9 (Neck - pinch skin): 0.688\
+Class 10 (Neck - scratch): 0.672\
+Class 11 (Pinch knee/leg skin): 0.062\
+Class 12 (Pull air toward your face): 0.309\
+Class 13 (Scratch knee/leg skin): 0.312\
+Class 14 (Text on phone): 0.031\
+Class 15 (Wave hello): 0.126\
+Class 16 (Write name in air): 0.191\
+Class 17 (Write name on leg): 0.125\
+============================================================\
+TOP 5 MOST CONFUSED PAIRS\
+============================================================\
+ 36 times: Neck - pinch skin -> Above ear - pull hair\
+ 34 times: Neck - scratch -> Above ear - pull hair\
+ 33 times: Eyebrow - pull hair -> Forehead - pull hairline\
+ 32 times: Forehead - scratch -> Forehead - pull hairline\
+ 24 times: Eyebrow - pull hair -> Eyelash - pull hair\
+\
+============================================================\
+BFRB vs NON-BFRB BREAKDOWN\
+============================================================\
+True Non-BFRB predicted as Non-BFRB: 564\
+True Non-BFRB predicted as BFRB: 7\
+True BFRB predicted as Non-BFRB: 18\
+True BFRB predicted as BFRB: 1038\
+\
+============================================================\
+Main Model Competition Score: 0.9826\
+IMU Model Competition Score: 0.8339\
+============================================================\
+}
